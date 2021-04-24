@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="greetings">おはよう</p>
+    <button onclick="toNight()">夜にする</button>
+</body>
+<script>
+    const greetings = document.getElementById('greetings')
+    const toNight = () => {
+        greetings.innerText = 'おやすみ'
+    }
+</script>
+
+
+</html>
+
+<!-- <button onclick="method1()">押すとmethod1が実行される</button> -->
