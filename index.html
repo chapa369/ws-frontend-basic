@@ -74,16 +74,6 @@
       taskLists.appendChild(listItem);
     };
 
-    // const addButton = document.getElementsByClassName('add-task-button')[0];
-    // addButton.addEventListener('click', event => {
-    //   const task = taskName.value;
-    //   if (task === ""){
-    //     return
-    //   }
-    //   addTask(task);
-    //   taskName.value = '';
-    // });
-
     addTaskForm.addEventListener("submit", (event) => {
       event.preventDefault(); //  submitイベントはデフォルトではブラウザの更新を伴うため、デフォルト挙動を無効化
       const task = taskName.value;
