@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>タスク管理ツール</title>
+    <!-- bootstrapをインポートしてくる -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -15,14 +16,19 @@
   <body>
     <main>
       <section class="jumbotron text-center">
+        <!-- 画像はる -->
         <img src="tasks.png" height="200px" alt="" />
+        <!-- 見出し記述 -->
         <p><strong>4/22開催WS「速習！フロントエンド」の成果物</strong></p>
+        <!-- どこかにリンクを貼ってみる -->
         <p>詳細は<a href="https://google.com">こちら</a></p>
       </section>
       <section class="container">
         <div class="row">
           <div class="col-md-6">
+            <!-- 「新規タスク作成」の見出しつける -->
             <h2>新規タスク作成</h2>
+            <!-- タスク追加フォーム作成 -->
             <form id="add-task-form">
               <div class="form-row my-3">
                 <input
@@ -40,7 +46,9 @@
             </form>
           </div>
           <div class="col-md-6">
+            <!-- 「タスク一覧」の見出しつける -->
             <h2>タスク一覧</h2>
+            <!-- タスク一覧のリスト作る -->
             <ul id="task-lists"></ul>
           </div>
         </div>
@@ -50,7 +58,7 @@
 
   <script>
     "use strict";
-
+    // DOMを取得
     const taskLists = document.getElementById("task-lists");
     const taskName = document.getElementById("task-name");
     const addTaskForm = document.getElementById("add-task-form");
